@@ -33,9 +33,9 @@ Schedule
 --------
 A bugfix version is released every month. A feature version is released every 3
 month. Two weeks before a feature release a *feature freeze* is put
-in place and no new features are added to the master branch. A week before the
-release a *code freeze* is put in place. Only urgent bugfixes are allowed in
-this week.
+in place, the stable branch is created and no new features are added to it.
+A week before the release a *code freeze* is put in place. Only urgent bugfixes are allowed in
+this week on the stable branch.
 
 Example schedule:
 
