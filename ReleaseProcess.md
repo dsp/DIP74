@@ -21,7 +21,7 @@ Versions
 --------
 We propose to introduce **bugfix versions** and **feature versions**. A
 **feature version** can contain new features, language changes, and
-deprecation. For every release version the minor part of the version
+deprecations. For every release version the minor part of the version
 is incremented: 2.066, 2.067, ...  A **bugfix version** is based
 on a feature version and contains only bugfixes and no new features,
 nor deprecations of other features or library changes. Bugfix
@@ -75,7 +75,7 @@ Branching Figure:
 Release manager
 ---------------
 Release managers are responsible for releasing the *release package* on time.
-They ensure that bugfix releases do not contain any backwards compatibiities and
+They ensure that bugfix releases do not contain any backwards compatibilities and
 maintain the changelog. Release managers are free to remove features or fixes
 when necessary. Release managers are able to merge features and bugfixes on
 github. They are to provide a GPG signed tarball and a feature. Release managers
