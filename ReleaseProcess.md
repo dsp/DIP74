@@ -31,21 +31,18 @@ additional bugfix versions when needed.
 
 Schedule
 --------
-A bugfix version is released every month. A feature version is released every 3
-month. Two weeks before a feature release a *feature freeze* is put
-in place and no new features are added to the master branch. A week before the
-release a *code freeze* is put in place. Only urgent bugfixes are allowed in
-this week.
+A bugfix version is released every month. A feature version is released
+every 2 month. Two weeks before a feature release the stable branch is
+cut from master new features are added will be added to the upcoming
+release.
 
 Example schedule:
 
-  - Dec 14th: Feature freeze 2.069
-  - Dec 21th: Code freeze 2.069
+  - Dec 14th: Branch cut (master becomes stable)
   - Jan 1st: 2.069
   - Feb 1st: 2.069.1
   - Mar 1st: 2.069.2
-  - Mar 14th: Feature freeze 2.070
-  - Mar 21th: Code freeze 2.070
+  - Mar 14th: Branch cut (master becomes stable)
   - Apr 1st: 2.070
 
 Support and Packages
@@ -58,18 +55,19 @@ preferable automized.
 
 Branching strategy
 ------------------
-There are two branches: master and ${version}. On a feature release date the
-master branch becomes for example 2.069. All subsequent "bugfix" versions are
-tagged off the 2.069 branch. New features go to master, which will become the
-next major version.
+There are two branches: master and stable. Two weeks before a feature
+release the master branch becomes stable. All subsequent "bugfix"
+versions are tagged off the stable branch. New features go to master,
+which will become the next major version. Stable is regularly merged back
+into msater to ensure that bugfixes make it into master.
 
 Branching Figure:
 
-    ----- master ------------------------------------
-     \                                         \
-      2.069 -------------------                 2.070 ----
-       \           \            \
-        TAG 2.069  TAG 2.069.1   TAG 2.069.2
+    ----- master --o--------o------------------------
+     \            /        /                     \
+      stable ---------------------------------    stable
+           \           \
+           TAG 2.069  TAG 2.069.1
 
 
 Release manager
