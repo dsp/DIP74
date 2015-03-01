@@ -41,9 +41,9 @@ Example schedule:
   - Dec 14th: Branch cut (master becomes stable)
   - Jan 1st: 2.069
   - Feb 1st: 2.069.1
-  - Mar 1st: 2.069.2
-  - Mar 14th: Branch cut (master becomes stable)
-  - Apr 1st: 2.070
+  - Feb 14th: Branch cut (master becomes stable)
+  - Mar 1st: 2.070
+  - Apr 1st: 2.070.1
 
 Support and Packages
 ------
