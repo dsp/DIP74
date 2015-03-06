@@ -50,7 +50,7 @@ Only the most recent version is supported. Distributions are free to backport
 what is needed. In addition Release Managers can decided to release additional
 fix versions if needed. The release manager offer the source tarball as well
 as a Windows version. All other formats are left to packagers and should be
-preferable automized.
+preferable automatized.
 
 Branching strategy
 ------------------
